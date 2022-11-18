@@ -1,0 +1,123 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* min-height: 100vh; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 325px;
+  /* border: 2px solid red; */
+}
+
+.content {
+  margin: 9px;
+}
+
+input {
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 24px;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+input:hover {
+  transition: 1s;
+  box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.732);
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+button {
+    color: white;
+  border: none;
+  background-color: deepskyblue;
+  font-size: 24px;
+  padding: 16px;
+  margin-left: 10px;
+  height: 65px;
+  font-weight: 600;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  transition: 0.5s all ease-in-out;
+  box-shadow: 5px 5px 1px 1px deepskyblue;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -ms-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+}
+
+#pertanyaan {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+#loaders{
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border-top: 15px solid deepskyblue;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    animation: 1s spin infinite linear;
+    -webkit-animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+}
